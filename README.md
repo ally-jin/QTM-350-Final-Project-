@@ -1,4 +1,4 @@
-# QTM-350-Final-Project-
+# QTM-350-Final-Project- Song Lyrics Accuracy using Amazon Transcribe 
 ## Amazon Transcribe 
 
 ![transcribe](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/social-transcribe.jpg)
