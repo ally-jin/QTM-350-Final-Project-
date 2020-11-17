@@ -111,7 +111,7 @@ We gathered all the word error rate for each song and its different speeds and p
 We put our songs, speed, genre, and word error rate into our data frame. We exported it as a csv. This was our data for the analysis portion of our project. 
 
 #
-![architecture](.Transcribe-Page-2.png)
+![architecture](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/Transcribe-Page-2.png)
 # Resources
 ## The solutions uses the following resources:
 
