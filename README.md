@@ -3,7 +3,21 @@
 Amazon Transcribe is a AWS ML service that converts audio speech to text. Our project looks into the accurancy of the transcribe service.
 To test the accurancy of Amazon Transcribe, we used songs given different speeds, levels of background noise, and artists' pronunciations. Then, we compared the lyrics transribed by Amazon Transcribed to the actual lyrics. 
 
-## Option 1: 
+## Option 1: Use the AWS Transcribe from the SageMaker
+
+Please refer to the google colab notebook [AWS Transcribe from Sagemaker](https://colab.research.google.com/drive/12zNHDEP1ED6eYyJo_p5hhgTPoE2B21G2#scrollTo=5SIQCydUogAx) to see for instructions.
+
+In general, we will be using following code to automatically transcribe our song into a json file. 
+
+```
+#start transcription 
+transcribe.start_transcription_job(
+    TranscriptionJobName= "sample_name",
+    Media={'MediaFileUri': 's3://sample_name.mp3'},
+    MediaFormat='mp3',
+    LanguageCode='en-US'
+)
+```
 
 ## Option 2: Create an Audio Transcript with Amazon Transcribe
 
@@ -12,9 +26,9 @@ You will download a sample audio file, create a S3 bucket, then upload the sampl
 
 a.  Search **S3** in the AWS services search bar and select **S3** to open the console
 
-b.  In the S3 dashboard choose Create bucket.
+b.  In the S3 dashboard choose **Create bucket**.
 
-c.  Enter a unique bucket name. Bucket names must be unique across all existing bucket names in Amazon S3. There are a number of other restrictions on S3 bucket names as well. Then select a Region to create your bucket in.
+c.  Enter a unique bucket name. Bucket names must be unique across all existing bucket names in Amazon S3. There are a number of other restrictions on S3 bucket names as well. Then select a **Region** to create your bucket in.
 
 d.  You have many useful options for your S3 bucket including Versioning, Server Access Logging, Tags, Object-level Logging and Default Encryption. We won't enable these features for this tutorial.
 
@@ -28,6 +42,8 @@ g. You will see your new bucket in the S3 console. Click on your bucket’s name
 h.  You are in your bucket’s home page. Select **Upload**.
 
 i.  Upload your mp3 file by selecting **Add files** and selecting the file OR dragging the mp3 file to the upload box. Select **Upload**.
+
+j.  Select the checkbox next to the mp3 file name in your bucket. A file detail pane will be displayed for the mp3 file name file. Copy the link to the file and save it for use later in the tutorial.
 
 #### Step 1: Our project 
 In our project, for each specific song, we uploaded mp3 files of slow(x0.5), original (1.0x), and fast (x2.0) speeds into our project bucket. 
