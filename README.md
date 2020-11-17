@@ -5,7 +5,7 @@ To test the accurancy of Amazon Transcribe, we used songs given different speeds
 
 ## Option 1: Use the AWS Transcribe from the SageMaker
 
-Please refer to the notebook in this repository called [AWS Transcribe from Sagemaker](https://colab.research.google.com/drive/12zNHDEP1ED6eYyJo_p5hhgTPoE2B21G2#scrollTo=5SIQCydUogAx) to see for instructions.
+Please refer to the notebook in this [repository](https://github.com/ally-jin/QTM-350-Final-Project-.git) called QTM350_FinalProject_AWSTranscribe_fromSageMaker.ipynb.
 
 In general, we will be using following code to automatically transcribe our song into a json file. 
 
