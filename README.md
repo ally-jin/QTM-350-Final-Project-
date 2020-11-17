@@ -58,9 +58,13 @@ a.  From the top menu bar, select **Services** then begin typing *Transcribe* in
 
 b.  On the **Amazon Transcribe** console main page, open the navigation pane and click **Transcription jobs**.
 
+[b](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos/create-audio-transcript-transcribe-step-2b.50563383df0c8c88c7ee375de8e4a5576554a4e5.png)
+
 c.  On the Transcription jobs page, click **Create job**.
 
 d.  On the Create transcription job page, in the Name field, type *sample-transcription-job*.
+
+[d](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos/create-audio-transcript-transcribe-step-2c.d5c5a5a4c251b4e34a83de045acc42dea03cdba3.png)
  
    Leave the default Language as English.
    
@@ -69,6 +73,8 @@ d.  On the Create transcription job page, in the Name field, type *sample-transc
 e. All the other options will be put on default. We did not use any of these options.
 
 f. Select **Create** to start your transcription job.  
+
+[f](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos/create-audio-transcript-transcribe-step-2d.cee4e95f7797195f0e4c5bd73f374ed7c7642059.png)
 
 #### Step 2. Our project
 
@@ -82,6 +88,7 @@ b. When the status is **Complete**, click on the *sample-transcription-job* link
 
 c. Next you will see the *sample-transcription-job* details. Scroll down to the **Transcription** panel to view the transcription job output. In the JSON pane you can view the transcription results as it would be returned from the Transcribe API or AWS CLI. 
 
+[c](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos/create-audio-transcript-transcribe-step-3b.be1d59a22f5c561b32fba9ca0c9a96f128854798.png)
 
 *For more information on these three steps, please refer to **Resources** : [Audio Transcript using Amazon Transcribe](https://aws.amazon.com/getting-started/hands-on/create-audio-transcript-transcribe/#)*
 
