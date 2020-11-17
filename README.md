@@ -5,7 +5,7 @@ To test the accurancy of Amazon Transcribe, we used songs given different speeds
 
 ## Option 1: Use the AWS Transcribe from the SageMaker
 
-Please refer to the google colab notebook [AWS Transcribe from Sagemaker](https://colab.research.google.com/drive/12zNHDEP1ED6eYyJo_p5hhgTPoE2B21G2#scrollTo=5SIQCydUogAx) to see for instructions.
+Please refer to the notebook in this repository called [AWS Transcribe from Sagemaker](https://colab.research.google.com/drive/12zNHDEP1ED6eYyJo_p5hhgTPoE2B21G2#scrollTo=5SIQCydUogAx) to see for instructions.
 
 In general, we will be using following code to automatically transcribe our song into a json file. 
 
@@ -79,6 +79,9 @@ b. When the status is **Complete**, click on the *sample-transcription-job* link
 
 c. Next you will see the *sample-transcription-job* details. Scroll down to the **Transcription** panel to view the transcription job output. In the JSON pane you can view the transcription results as it would be returned from the Transcribe API or AWS CLI. 
 
+
+*For more information on these three steps, please refer to **Resources** : [Audio Transcript using Amazon Transcribe](https://aws.amazon.com/getting-started/hands-on/create-audio-transcript-transcribe/#)*
+
 #### Step 3. Our project
 
 The transcription job in the .json format was put back into our bucket. We turned the songs transcription results into a data frame in order to check for the accuracy. 
@@ -106,3 +109,16 @@ We gathered all the word error rate for each song and its different speeds and p
 #### Step 5. Our project: Dataframe
 
 We put our songs, speed, genre, and word error rate into our data frame. We exported it as a csv. This was our data for the analysis portion of our project. 
+
+# Resources
+## The solutions uses the following resources:
+
+1. [Audio Transcript using Amazon Transcribe](https://aws.amazon.com/getting-started/hands-on/create-audio-transcript-transcribe/#)
+
+2. [JiWER Python Package](https://pypi.org/project/jiwer/)
+
+3. [Amazon Transcribe Documentation](https://docs.aws.amazon.com/transcribe/index.html)
+
+
+
+
