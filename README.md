@@ -113,7 +113,7 @@ We put our songs, speed, genre, and word error rate into our data frame. We expo
 # Architecture Overview 
 ![architecture](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/Transcribe-Page-2.png)
 
-We initally downloaded all of our song files into mp3. We changed the speed of each song to either 0.5x or 2.0x and also downloaded it as mp3 files. Using **S3**, we uploaded all of our mp3 files into our project S3 bucket. Then, we used the Amazon Transcribe service to get a transcription of each song and speed into json file. These transcription json files were put back into our project S3 bucket, so we could check the accuracy of each song and its speeds with the JiWER python package. Lastly, we created a dataframe showing speed, genre, and accuracy. This dataframe is turned into a csv file to be used for our analysis. 
+We initally downloaded all of our song files into mp3. We changed the speed of each song to either 0.5x or 2.0x and also downloaded it as mp3 files. Using [S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html), we uploaded all of our mp3 files into our project S3 bucket. Then, we used the [Amazon Transcribe](https://docs.aws.amazon.com/transcribe/index.html) service to get a transcription of each song and speed into json file. These transcription json files were put back into our project S3 bucket, so we could check the accuracy of each song and its speeds with the JiWER python package. Lastly, we created a dataframe showing speed, genre, and accuracy. This dataframe is turned into a csv file to be used for our analysis. 
 
 ## The solutions uses the following resources:
 
@@ -123,6 +123,6 @@ We initally downloaded all of our song files into mp3. We changed the speed of e
 
 3. [Amazon Transcribe Documentation](https://docs.aws.amazon.com/transcribe/index.html)
 
-
+4. [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html)
 
 
