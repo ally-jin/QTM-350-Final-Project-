@@ -58,20 +58,31 @@ b.  In the S3 dashboard choose **Create bucket**.
 
 c.  Enter a unique bucket name. Bucket names must be unique across all existing bucket names in Amazon S3. There are a number of other restrictions on S3 bucket names as well. Then select a **Region** to create your bucket in.
 
+![cstep](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos2/create-audio-transcript-transcribe-step 1e.c6895f5d7827a21a5723f84c58fa694d7e957f01.png)
+
 d.  You have many useful options for your S3 bucket including Versioning, Server Access Logging, Tags, Object-level Logging and Default Encryption. We won't enable these features for this tutorial.
 
 e.  In this step you have the ability to adjust permission settings for your S3 bucket during the S3 bucket creation process.
 Leave the default values and select **Next**.
 
+
 f. Review your configuration settings and select **Create bucket**. 
+
+![createbucket](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos2/create-audio-transcript-transcribe-step-1h.469bb819dcc38954466100708d27684a0a9bdd88.png) 
 
 g. You will see your new bucket in the S3 console. Click on your bucket’s name to navigate to the bucket. Your bucket name will not be the same as pictured in the screenshot to the right.
 
 h.  You are in your bucket’s home page. Select **Upload**.
 
+![upload](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos2/create-audio-transcript-transcribe-step-1j.cdc26dc7b820501ab9b51e21c9d8211dc310bef5.png)
+
 i.  Upload your mp3 file by selecting **Add files** and selecting the file OR dragging the mp3 file to the upload box. Select **Upload**.
 
+![uploadfile](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos2/create-audio-transcript-transcribe-step-1k.b59a78a1bf4628dc140d6c3da507b601e73e6e62.png)
+
 j.  Select the checkbox next to the mp3 file name in your bucket. A file detail pane will be displayed for the mp3 file name file. Copy the link to the file and save it for use later in the tutorial.
+
+![link](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/photos2/create-audio-transcript-transcribe-step-1l.c161c6a2c1946837a566cae724ce845fab478a3a.png)
 
 #### Step 1: Our project 
 In our project, for each specific song, we uploaded mp3 files of slow(x0.5), original (1.0x), and fast (x2.0) speeds into our project bucket. 
