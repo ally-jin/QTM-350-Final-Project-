@@ -129,10 +129,8 @@ We initally downloaded all of our song files into mp3. We changed the speed of e
 
 1. [Audio Transcript using Amazon Transcribe](https://aws.amazon.com/getting-started/hands-on/create-audio-transcript-transcribe/#)
 
-2. [JiWER Python Package](https://pypi.org/project/jiwer/)
+2. [Amazon Transcribe Documentation](https://docs.aws.amazon.com/transcribe/index.html)
 
-3. [Amazon Transcribe Documentation](https://docs.aws.amazon.com/transcribe/index.html)
-
-4. [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html)
+3. [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html)
 
 
