@@ -161,6 +161,8 @@ We put our songs, speed, genre, and word error rate into our data frame. We expo
 
 We initally downloaded all of our song files into mp3. We changed the speed of each song to either 0.5x or 2.0x and also downloaded it as mp3 files. Using [S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html), we uploaded all of our mp3 files into our project S3 bucket. Then, we used the [Amazon Transcribe](https://docs.aws.amazon.com/transcribe/index.html) service to get a transcription of each song and speed into json file. These transcription json files were put back into our project S3 bucket, so we could check the accuracy of each song and its speeds with the JiWER python package. Lastly, we created a dataframe showing speed, genre, and accuracy. This dataframe is turned into a csv file to be used for our analysis. 
 
+*To view our data analysis, check out our [notebook](https://github.com/ally-jin/QTM-350-Final-Project-/blob/main/QTM350FinalProjectAnalysis.ipynb) in our repository *
+
 ## The solutions uses the following resources:
 
 1. [Audio Transcript using Amazon Transcribe](https://aws.amazon.com/getting-started/hands-on/create-audio-transcript-transcribe/#)
