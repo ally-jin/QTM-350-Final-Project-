@@ -133,9 +133,14 @@ c. Next you will see the *sample-transcription-job* details. Scroll down to the 
 The transcription job in the .json format was put back into our bucket. We turned the songs transcription results into a data frame in order to check for the accuracy. 
 
 #### Step 4. Our project: Accuracy 
-To check for the accuracy, we used the **JiWER** python package to approximate the Word Error Rate (WER). 
 
-a. We installed the **JiWER** package and imported **wer**
+We calculated the accuracy through a compare text [website](https://countwordsfree.com/comparetexts). For more information, check out our [blog](https://colab.research.google.com/drive/1OFSo-XGnSlgZH1Gdte_9RXoFgUMmWzK-?usp=sharing).
+
+Another way to check for the accuracy is to use the **JiWER** python package to approximate the Word Error Rate (WER). 
+
+a. You can install the **JiWER** package and import **wer**
+
+A sample code is below: 
 
 ```
 $ pip install jiwer
@@ -150,7 +155,8 @@ error = wer(
 ground_truth, hypothesis)
 
 ```
-We gathered all the word error rate for each song and its different speeds and put them into our data frame. 
+
+```error``` would represent the word error rate for the song.
 
 #### Step 5. Our project: Dataframe
 
