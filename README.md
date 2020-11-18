@@ -6,21 +6,17 @@
 Amazon Transcribe is a AWS ML service that converts audio speech to text. Our project looks into the accurancy of the transcribe service.
 To test the accurancy of Amazon Transcribe, we used songs given different speeds, levels of background noise, and artists' pronunciations. Then, we compared the lyrics transribed by Amazon Transcribed to the actual lyrics. 
 
-## Option 1: Use the AWS Transcribe from the SageMaker
+## Using the AWS Transcribe from the SageMaker
+### Option 1: Use the AWS Transcribe from the SageMaker
 
-Please refer to the notebook in this [repository](https://github.com/ally-jin/QTM-350-Final-Project-.git) called QTM350_FinalProject_AWSTranscribe_fromSageMaker.ipynb.
+First of all, to use the SageMaker notebook instances directly, we need a media file in a S3 bucket. There can be 2 cases in this: 1) Don't have a S3 bucket so need to make a S3 bucket and upload the music file to the bucket or 2) Already have a S3 bucket and file uploaded
+#### 1) Make S3 bucket and upload the music file to the bucket
+<img width="1116" alt="Screen Shot 2020-11-18 at 9 51 36 AM" src="https://user-images.githubusercontent.com/71488098/99468640-53021780-2984-11eb-8300-65e5d1d7d800.png">
 
-In general, we will be using following code to automatically transcribe our song into a json file. 
+#### 2)If already have a bucket and file uploaded
+<img width="949" alt="Screen Shot 2020-11-18 at 9 57 50 AM" src="https://user-images.githubusercontent.com/71488098/99468713-893f9700-2984-11eb-86d6-7eb83ecdf2ef.png">
 
-```
-#start transcription 
-transcribe.start_transcription_job(
-    TranscriptionJobName= "sample_name",
-    Media={'MediaFileUri': 's3://sample_name.mp3'},
-    MediaFormat='mp3',
-    LanguageCode='en-US'
-)
-```
+
 
 ## Option 2: Create an Audio Transcript with Amazon Transcribe
 
