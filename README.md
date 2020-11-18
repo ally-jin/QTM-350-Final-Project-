@@ -40,7 +40,6 @@ Now we are checking if we have the file downloaded
 To see the file
 
 <img width="872" alt="Screen Shot 2020-11-18 at 10 08 18 AM" src="https://user-images.githubusercontent.com/71488098/99469432-0b7c8b00-2986-11eb-9055-41fe2b10b2e2.png">
-<img width="818" alt="Screen Shot 2020-11-18 at 10 08 57 AM" src="https://user-images.githubusercontent.com/71488098/99469455-1505f300-2986-11eb-993f-9f26a3178cb8.png">
 
 If we want to change the .json file either to .docx or .csv to generate the data frame
 <img width="1059" alt="Screen Shot 2020-11-18 at 10 09 34 AM" src="https://user-images.githubusercontent.com/71488098/99469489-2a7b1d00-2986-11eb-9c99-0728770a33ea.png">
