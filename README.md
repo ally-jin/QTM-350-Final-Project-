@@ -6,7 +6,7 @@
 Amazon Transcribe is a AWS ML service that converts audio speech to text. Our project looks into the accurancy of the transcribe service.
 To test the accurancy of Amazon Transcribe, we used songs given different speeds, levels of background noise, and artists' pronunciations. Then, we compared the lyrics transribed by Amazon Transcribed to the actual lyrics. 
 
-## Using the AWS Transcribe from the SageMaker
+
 ### Option 1: Use the AWS Transcribe from the SageMaker
 
 First of all, to use the SageMaker notebook instances directly, we need a media file in a S3 bucket. There can be 2 cases in this: 1) Don't have a S3 bucket so need to make a S3 bucket and upload the music file to the bucket or 2) Already have a S3 bucket and file uploaded
@@ -16,7 +16,34 @@ First of all, to use the SageMaker notebook instances directly, we need a media 
 #### 2)If already have a bucket and file uploaded
 <img width="949" alt="Screen Shot 2020-11-18 at 9 57 50 AM" src="https://user-images.githubusercontent.com/71488098/99468713-893f9700-2984-11eb-86d6-7eb83ecdf2ef.png">
 
+Then, we follow the example provided by [AWS](https://docs.aws.amazon.com/transcribe/latest/dg/getting-started-python.html) for the transcription, but we made a few changes in here.
 
+First, copy the S3 URI from the s3 console
+
+Then, in the code below, I replaced the string that was the value of the job_uri with the URL I copied, specifically s3://musicfortonno/LetItGo.mp and the transciption job will be saved as LetItGo
+<img width="1069" alt="Screen Shot 2020-11-18 at 10 03 57 AM" src="https://user-images.githubusercontent.com/71488098/99469120-63ff5880-2985-11eb-9723-7765c57740e6.png">
+
+<img width="1052" alt="Screen Shot 2020-11-18 at 10 04 37 AM" src="https://user-images.githubusercontent.com/71488098/99469182-7d080980-2985-11eb-9c4d-a01e6e39a1c9.png">
+
+Once the transcription job is compeleted, now we need to retrieve the transciption text and save it as .json file
+
+We have derived the URI from TransciptionFileUri and we saved it as LetItGo.json
+
+URI for LetItGo is 
+
+<img width="1090" alt="Screen Shot 2020-11-18 at 10 06 33 AM" src="https://user-images.githubusercontent.com/71488098/99469297-be001e00-2985-11eb-9ac2-2465843ac76b.png">
+
+Now we are checking if we have the file downloaded
+
+<img width="1054" alt="Screen Shot 2020-11-18 at 10 07 18 AM" src="https://user-images.githubusercontent.com/71488098/99469345-d96b2900-2985-11eb-96d1-72526a9e75a0.png">
+
+To see the file
+<img width="872" alt="Screen Shot 2020-11-18 at 10 08 18 AM" src="https://user-images.githubusercontent.com/71488098/99469432-0b7c8b00-2986-11eb-9055-41fe2b10b2e2.png">
+<img width="818" alt="Screen Shot 2020-11-18 at 10 08 57 AM" src="https://user-images.githubusercontent.com/71488098/99469455-1505f300-2986-11eb-993f-9f26a3178cb8.png">
+
+If we want to change the .json file either to .docx or .csv to generate the data frame
+<img width="1059" alt="Screen Shot 2020-11-18 at 10 09 34 AM" src="https://user-images.githubusercontent.com/71488098/99469489-2a7b1d00-2986-11eb-9c99-0728770a33ea.png">
+Above described the basic steps to use the SageMaker to do AWS Transcribe and generate .json file at the end.
 
 ## Option 2: Create an Audio Transcript with Amazon Transcribe
 
