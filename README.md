@@ -8,6 +8,7 @@ To test the accurancy of Amazon Transcribe, we used songs given different speeds
 
 
 ### Option 1: Use the AWS Transcribe from the SageMaker
+*The following will include screenshots of codes; the original ipynb file is included in this GitHub as [QTM350_FinalProject_AWSTranscribe_fromSageMaker.ipynb]
 
 First of all, to use the SageMaker notebook instances directly, we need a media file in a S3 bucket. There can be 2 cases in this: 1) Don't have a S3 bucket so need to make a S3 bucket and upload the music file to the bucket or 2) Already have a S3 bucket and file uploaded
 #### 1) Make S3 bucket and upload the music file to the bucket
