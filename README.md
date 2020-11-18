@@ -6,6 +6,7 @@
 Amazon Transcribe is a AWS ML service that converts audio speech to text. Our project looks into the accurancy of the transcribe service.
 To test the accurancy of Amazon Transcribe, we used songs given different speeds, levels of background noise, and artists' pronunciations. Then, we compared the lyrics transribed by Amazon Transcribed to the actual lyrics. 
 
+This readme will walk you through how to recreate our project in different ways. For the method we used, refer to the [blog](https://colab.research.google.com/drive/1aCN8W0ghPJmnMW3UGaO6xYgVgvCS81AH?usp=sharing). For a different method using the AWS Transcribe console and the command line, continue reading and learn how to do it code chunk by code chunk.
 
 ### Option 1: Use the AWS Transcribe from the SageMaker
 *The following will include screenshots of codes; the original ipynb file is included in this GitHub as QTM350_FinalProject_AWSTranscribe_fromSageMaker.ipynb
