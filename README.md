@@ -38,6 +38,7 @@ Now we are checking if we have the file downloaded
 <img width="1054" alt="Screen Shot 2020-11-18 at 10 07 18 AM" src="https://user-images.githubusercontent.com/71488098/99469345-d96b2900-2985-11eb-96d1-72526a9e75a0.png">
 
 To see the file
+
 <img width="872" alt="Screen Shot 2020-11-18 at 10 08 18 AM" src="https://user-images.githubusercontent.com/71488098/99469432-0b7c8b00-2986-11eb-9055-41fe2b10b2e2.png">
 <img width="818" alt="Screen Shot 2020-11-18 at 10 08 57 AM" src="https://user-images.githubusercontent.com/71488098/99469455-1505f300-2986-11eb-993f-9f26a3178cb8.png">
 
